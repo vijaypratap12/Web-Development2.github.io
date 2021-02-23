@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<style>
+    body {
+        background-color: goldenrod;
+    }
+
+
+.navbar {
+  overflow: hidden;
+  background-color: goldenrod;
+    font-size: 25px;
+}
+
+
+.navbar a {
+  float: left;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+
+.subnav .subnavbtn {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: deepskyblue;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: deepskyblue;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+    
+    
+    
+    
+    .Main {
+height: 700px; 
+overflow: hidden;
+position: relative;
+        
+        
+        
+         background-image: url(courierbackground.jpg);
+        background-size:contain;
+        background-position: center;
+
+}
+.Main h1 {
+    color: goldenrod;
+    font-size: 60px;
+position: absolute;
+width: 100%;
+height: 100%;
+margin-top: 70px;
+line-height: 50px;
+text-align: center;
+/* Starting position */
+-moz-transform:translateX(100%);
+-webkit-transform:translateX(100%); 
+transform:translateX(100%);
+/* Apply animation to this element */ 
+-moz-animation: scroll-left 10s linear infinite;
+-webkit-animation: scroll-left 10s linear infinite;
+animation: scroll-left 10s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+0% { -moz-transform: translateX(100%); }
+100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+0% { -webkit-transform: translateX(100%); }
+100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+0% { 
+-moz-transform: translateX(100%); /* Browser bug fix */
+-webkit-transform: translateX(100%); /* Browser bug fix */
+transform: translateX(100%); 
+}
+100% { 
+-moz-transform: translateX(-100%); /* Browser bug fix */
+-webkit-transform: translateX(-100%); /* Browser bug fix */
+transform: translateX(-100%); 
+}
+}
+    
+    
+    #reg {
+        font-size: 40px;
+        text-align: center;
+        background-color: goldenrod;
+        color: black;
+        border-radius: 20px;
+        border: none;
+        animation: example 1s alternate-reverse infinite;
+    
+    }
+    
+    @keyframes example {
+        from { opacity: 0.9;
+            
+        }
+        to {
+            opacity: 0;
+            
+        }
+    }
+    
+    
+    
+    
+    
+    
+    .reg2 {
+        margin-top: 600px;
+        background-color: goldenrod;
+    }
+    
+    
+    
+    
+    .Main1 {
+        text-align: center;
+        margin-top: 100px;
+    }
+    
+    
+.Main2 {
+    background-image: url(sb.jpg);
+    background-position: center;
+    background-size:cover;
+    height: 1000px;
+    color: white;
+    margin-top: 70px;
+}
+    
+    #firstid {
+        display: flex;
+    }
+    .Main2-1
+    {
+        font-size: 25px;
+        margin-right: 80px;
+        color: white;
+    }
+    .Main2-2
+    {
+        font-size: 25px;
+        margin-left: 30px;
+        padding-left: 10px;
+        color: white;
+    }
+    
+     .Main2-3 {
+        color: white;
+         font-size: 25px;
+         margin-top: 400px;
+}
+    
+    
+      .Main2-4 {
+          background-color: goldenrod;
+          color: black;
+        
+    }
+    
+    #num {
+        border-radius: 25px;
+        height: 40px;
+        width: 300px;
+        text-align: center;
+        background-color: white;
+        border: none;
+    }
+    #track {
+        background-color: mediumblue;
+        border-radius: 25px;
+        height: 40px;
+        width: 100px;
+        text-align: center;
+        border: none;
+        
+    }
+    
+    
+
+.Main4 {
+display: flex;
+    margin-top: 50px;
+}
+     .Main4-1
+    {
+        
+    }
+    .Main4-2
+    {
+        
+    }
+     .Main4-3
+    {
+    
+        
+    }
+    .Main5 {
+        background-image: url(footer.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        margin-top: 150px;
+        height: 400px;
+    }
+    
+    .Main5-1 {
+        color: black;
+        font-size: 20px;
+
+    
+    }
+    
+    .Main5-2
+    {
+        color: black;
+        font-size: 20px;
+        margin-left: 250px;
+    }
+    #email {
+        height:35px;
+        width: 300px;
+        background-color: goldenrod;
+        border-radius: 25px;
+        border:none;
+        
+    }
+    #bt {
+        font-size: 25px;
+        background-color: goldenrod;
+        border-radius: 25px;
+        border:none;
+    
+    }
+    
+    
+    
+    
+    /* styling search bar */ 
+    .search input[type=text]{ 
+        width:300px; 
+        height:28px; 
+        border-radius:25px; 
+        border: none; 
+    } 
+          
+    .search{ 
+        float:right; 
+        margin:7px; 
+    } 
+          
+    .search button{ 
+        background-color: goldenrod; 
+        color: #f2f2f2; 
+        float: right; 
+        padding: 5px 10px; 
+        margin-right: 16px; 
+        font-size: 16px; 
+        border: none; 
+        cursor: pointer; 
+    }  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+</style>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Saamaan Bhejo</title>
+</head>
+
+
+
+
+
+<body>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The navigation menu -->
+<div class="navbar">
+   <div class="subnav">
+    <button class="subnavbtn">Home <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="signup.html">Sign Up</a>
+    <a href="login.html">Log In</a>
+      <a href="#bookmarks">Bookmarks</a>
+      
+    </div>
+  </div>
+     <div class="subnav">
+    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="tos.html">Terms of Service</a>
+      <a href="#company">Company</a>
+      <a href="#Boy">Boy</a>
+      </div>
+  </div>
+   <div class="subnav">
+    <button class="subnavbtn">Orders <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="orders.html">Your Orders</a>
+      <a href="#online ordering help">Online Ordering Help</a>
+     
+      </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#bring">Bring</a>
+      <a href="#deliver">Deliver</a>
+      <a href="#package">Package</a>
+      <a href="#express">Express</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Partners <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#link1">Link 1</a>
+      <a href="#link2">Link 2</a>
+      <a href="#link3">Link 3</a>
+      <a href="#link4">Link 4</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Contacts <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="mainoffice.html">Main Office</a>
+      <a href="emailpage.html">E-mail</a>
+      <a href="facebook page.html">Facebook</a>
+      <a href="#enquiry number">Enquiry Number</a>
+    </div>
+  </div>
+  <div>
+   <a href = "galary.html">Galary</a>
+</div>
+    
+    
+     <div class="search"> 
+            <form action="#"> 
+                <input type="text"
+                    placeholder=" Search"
+                    name="search"> 
+                <button> 
+                    <i class="fa fa-search"
+                        style="font-size: 18px;"> 
+                    </i> 
+                </button> 
+            </form> 
+        </div> 
+
+    
+</div>
+    
+
+    
+<div class = "Main">
+    <h1><strong> Welcome to Saamaan Bhejo</strong></h1>
+    <div class = "reg2">
+    <center><button type="button" id="reg">Order Now!</button></center>
+ </div>
+    </div>
+
+    
+        
+
+    
+<div class= "Main1">
+    <h1> How SB opens a world of opportunities</h1>
+    </div>
+
+
+<div class = "Main2">
+    
+    <div id="firstid">
+    <div class="Main2-1">
+<h2>Reach customers faster than ever</h2>
+<p>Shipping with SB has never been easier. With our integrated network and flexible services,your goods can reach customers on the other side  as soon as possible.</p>
+        
+    </div>
+    
+    <div class="Main2-2">
+<h2>Gain control</h2>
+<p>With my SB you can manage and keep track of your shipments in one place.It hepls to gain control over your shipment. </p>
+</div>
+    </div>
+    
+    
+<div class="Main2-4">
+    <h1><center>Track Your Shipment</center></h1>
+    <center><input type="number" id="num" placeholder="Enter Your Order Number"></center>
+    <center><button type="button" id="track">TRACK</button></center>
+    </div>
+
+
+
+<div class ="Main2-3">
+
+<h1> <center> Our Services</center> </h1>
+<p><center><h3>Flexible, reliable and fast – our range of services are designed to suit your needs.</h3></center></p>
+    
+    </div>
+    </div>
+    
+<div class = "Main4">
+<div class="Main4-1">    
+<h1>Economy Express</h1>
+<h2> Economy Express delivery from two business days.</h2>
+<ul>
+<li>12:00 Economy Express: delivery by 12pm</li>
+<li>Economy Express: delivery by 6pm</li>
+</ul>
+    </div>
+    
+    <div class="Main4-2">
+
+<h1>Lower price</h1>
+<h2>Economy Express delivery from two business days</h2>
+<ul>
+<li>Economy Express: delivery by 6pm</li>
+</ul>
+    </div>
+    <div class="Main4-3">
+<h1>Special services</h1>
+<h2>Tailor-made shipping solutions for your special requests</h2>
+<ul>
+<li>Urgent, confidential, temperature controlled or sensitive shipments</li>
+<li>Large or heavy items (freight)</li>
+<li>Industry-specific solutions</li>
+</ul>
+    </div>
+</div>
+    
+    
+    
+    <div class="Main5">
+        <div class ="Main5-1">
+            <h2><strong>Subscribe to our newsletter</strong></h2>
+            
+                <form class="form-inline" action="/action_page.php">
+
+  <input type="email" id="email" placeholder="Enter your email" name="email">
+  
+  <button type="submit" value="primary" id="bt">Submit</button>
+
+            </form>
+        <h3>Follow us on:</h3>
+        <ul>
+        <li> <a href = "https://www.facebook.com/">Facebook</a></li>
+            <li><a href = "https://www.instagram.com/">Instagram</a></li>
+            <li><a href = "https://twitter.com/?lang=en">Twitter</a></li>
+            <li><a href= "https://linkedin.com/">Linkedin</a></li>
+        </ul>
+        </div>
+        
+        <div class ="Main5-2">
+        <ul>
+    <li> Privacy Policy</li>
+            <li> Contact us</li>
+            <li> Help</li>
+        </ul>
+    </div>
+        <div class  = "Main5-3">
+        </div>
+    </div>
+    
+
+</body>
+</html>
